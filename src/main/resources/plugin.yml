@@ -1,0 +1,100 @@
+name: BossbarTest
+version: '${project.version}'
+main: dev.ggtylerr.bossbar.Main
+api-version: 1.18
+prefix: BB
+authors: [ ggtylerr ]
+description: Quick bossbar plugin made for testing spigot's API
+website: ggtylerr.dev
+
+commands:
+  bbcreate:
+    description: Creates a bossbar
+    aliases: [bbc,bba,bbadd]
+    usage: /<command> <name> <text>
+    permission: bossbar.create
+  bbdelete:
+    description: Deletes a bossbar
+    aliases: [bbd,bbr,bbremove]
+    usage: /<command> <name/s>
+    permission: bossbar.delete
+  bbcopy:
+    description: CTRL+C's a bossbar
+    aliases: [bbcpy]
+    usage: /<command> <name> <newname>
+    permission: bossbar.copy
+  bbcut:
+    description: CTRL+X's a bossbar
+    aliases: [bbct]
+    usage: /<command> <name> <newname>
+    permission: bossbar.cut
+  bblist:
+    description: Lists all bossbars (from this plugin)
+    aliases: [bbl]
+    usage: /<command>
+    permission: bossbar.list
+  bbtext:
+    description: Sets (or gets) the bossbar's text
+    aliases: [bbt]
+    usage: /<command> <name> [text]
+    permission: bossbar.text
+  bbcolor:
+    description: Sets (or gets) the bossbar's color
+    aliases: [bbco]
+    usage: /<command> <name> [color]
+    permission: bossbar.color
+  bbprogress:
+    description: Sets (or gets) the bossbar's progress
+    aliases: [bbpr]
+    usage: /<command> <name> [0.0-1.0]
+    permission: bossbar.progress
+  bbsegments:
+    description: Sets (or gets) the bossbar's segments
+    aliases: [bbs]
+    usage: /<command> <name> [segments]
+    permission: bossbar.segments
+  bbflags:
+    description: Gets the bossbar's flags
+    aliases: [bbf]
+    usage: /<command> <name>
+    permission: bossbar.flags
+  bbaflags:
+    description: Add flag/s to a bossbar
+    aliases: [bbaf, bbfa, bbflagsa, bbflagsadd]
+    usage: /<command> <name> <flag/s>
+    permission: bossbar.flags.add
+  bbrflags:
+    description: Removes flag/s to a bossbar
+    aliases: [bbrf, bbfr, bbflagsr, bbflagsremove]
+    usage: /<command> <name> <flag/s>
+    permission: bossbar.flags.remove
+  bbplayers:
+    description: Gets the bossbar's players
+    aliases: [bbp]
+    usage: /<command> <name>
+    permission: bossbar.players
+  bbaplayers:
+    description: Add player/s to a bossbar
+    aliases: [ bbap, bbpa, bbplayersa, bbplayersadd ]
+    usage: /<command> <name> <flag/s>
+    permission: bossbar.players.add
+  bbrplayers:
+    description: Remove player/s to a bossbar
+    aliases: [ bbrp, bbpr, bbplayersr, bbplayersremove ]
+    usage: /<command> <name> <flag/s>
+    permission: bossbar.players.remove
+  bbshow:
+    description: Makes a bossbar visible
+    aliases: [ bbsh, bbv, bbvis, bbvisible ]
+    usage: /<command> <name>
+    permission: bossbar.show
+  bbhide:
+    description: Makes a bossbar hidden
+    aliases: [ bbh, bbi, bbinv, bbinvis, bbinvisible ]
+    usage: /<command> <name>
+    permission: bossbar.hide
+  bbtoggle:
+    description: Toggles a bossbar to be either visible or hidden
+    aliases: [ bbto, bbtog ]
+    usage: /<command> <name>
+    permission: bossbar.toggle
